@@ -11,7 +11,7 @@ function ToDoList() {
     ' Plan weekend activity'
     
   ]);
-  const [checked, setChecked] = useState(Array(4).fill(false));
+ const [checked, setChecked] = useState(Array(tasks.length).fill(false));
   const [newTask, setNewTask] = useState('');
 
   const toggleCheckbox = (index) => {
